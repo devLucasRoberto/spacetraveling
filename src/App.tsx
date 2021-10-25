@@ -7,16 +7,14 @@ import Posts from './pages/Posts'
 function App() {
   return (
     <BrowserRouter>
-      <div className="container">
-        <Header />
+      <Header />
 
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/posts/:post?" component={Posts} />
-        </Switch>
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/posts/:post?" component={Posts} />
+      </Switch>
 
-        <GlobalStyles />
-      </div>
+      <GlobalStyles />
     </BrowserRouter>
   )
 }

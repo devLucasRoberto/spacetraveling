@@ -1,40 +1,40 @@
 import React from 'react'
-import Post from '../../components/Post'
+import CardPost from '../../components/CardPost'
 
 import { Container, More } from './styles'
 
 const Home: React.FC = () => {
   return (
     <Container>
-      <Post
+      <CardPost
         title="Como utilizar Hooks"
         text="Pensando em sincronização em vez de ciclos de vida."
         user="Lucas Roberto"
         date="15 Mar 2021"
       />
 
-      <Post
+      <CardPost
         title="Como utilizar Hooks"
         text="Pensando em sincronização em vez de ciclos de vida."
         user="Lucas Roberto"
         date="15 Mar 2021"
       />
 
-      <Post
+      <CardPost
         title="Como utilizar Hooks"
         text="Pensando em sincronização em vez de ciclos de vida."
         user="Lucas Roberto"
         date="15 Mar 2021"
       />
 
-      <Post
+      <CardPost
         title="Como utilizar Hooks"
         text="Pensando em sincronização em vez de ciclos de vida."
         user="Lucas Roberto"
         date="15 Mar 2021"
       />
 
-      <Post
+      <CardPost
         title="Como utilizar Hooks"
         text="Pensando em sincronização em vez de ciclos de vida."
         user="Lucas Roberto"

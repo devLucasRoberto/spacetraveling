@@ -1,11 +1,16 @@
 import React from 'react'
+import bannerImg from '../../assets/banner.png'
 
-import { Container } from './styles'
+import { Container, Content } from './styles'
 
 const Posts: React.FC = () => {
   return (
     <Container>
-      <h1>Hello world</h1>
+      <img src={bannerImg} alt="" />
+
+      <Content>
+        <h1>Hello world</h1>
+      </Content>
     </Container>
   )
 }
