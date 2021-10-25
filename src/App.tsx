@@ -2,7 +2,7 @@ import Header from './components/Header'
 import Home from './pages/Home'
 import GlobalStyles from './styles/GlobalStyles'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import Posts from './pages/Posts'
+import Post from './pages/Post'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
 
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/posts/:post?" component={Posts} />
+        <Route path="/posts/:post?" component={Post} />
       </Switch>
 
       <GlobalStyles />
