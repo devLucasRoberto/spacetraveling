@@ -3,6 +3,7 @@ import userImg from '../../assets/user.svg'
 import dateImg from '../../assets/calendar.svg'
 
 import { Container, Title, P, Info } from './styles'
+import { Link } from 'react-router-dom'
 
 interface Props {
   title: string
@@ -14,19 +15,21 @@ interface Props {
 const CardPost: React.FC<Props> = ({ title, text, date, user }) => {
   return (
     <Container>
-      <Title>{title}</Title>
-      <P>{text}</P>
+      <Link to="/posts/post">
+        <Title>{title}</Title>
+        <P>{text}</P>
 
-      <Info>
-        <span>
-          <img src={dateImg} alt="" />
-          {date}
-        </span>
-        <span>
-          <img src={userImg} alt="" />
-          {user}
-        </span>
-      </Info>
+        <Info>
+          <span>
+            <img src={dateImg} alt="" />
+            {date}
+          </span>
+          <span>
+            <img src={userImg} alt="" />
+            {user}
+          </span>
+        </Info>
+      </Link>
     </Container>
   )
 }

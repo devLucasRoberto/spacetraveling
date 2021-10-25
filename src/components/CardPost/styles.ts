@@ -3,6 +3,16 @@ import styled from 'styled-components'
 export const Container = styled.div`
   width: 100%;
   margin-bottom: 48px;
+  margin-top: 20px;
+
+  transition: filter 0.2s;
+  &:hover {
+    filter: brightness(0.7);
+  }
+
+  a {
+    text-decoration: none;
+  }
 `
 
 export const Title = styled.h1`
