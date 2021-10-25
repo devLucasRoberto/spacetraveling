@@ -1,13 +1,23 @@
-import React from 'react'
+import Header from './components/Header'
+import Home from './pages/Home'
 import GlobalStyles from './styles/GlobalStyles'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import Posts from './pages/Posts'
 
 function App() {
   return (
-    <>
-      <h1>Hello world</h1>
+    <BrowserRouter>
+      <div className="container">
+        <Header />
 
-      <GlobalStyles />
-    </>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/posts/:post?" component={Posts} />
+        </Switch>
+
+        <GlobalStyles />
+      </div>
+    </BrowserRouter>
   )
 }
 

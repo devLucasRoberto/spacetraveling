@@ -16,13 +16,20 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
-  html, body, #root {
+  html, body {
     width:100%;
+    background: var(--black-700);
   }
 
   *, button, input {
     border: 0;
     outline: 0;
     font-family: 'Inter', sans-serif;
+  }
+
+  .container{
+    max-width: 720px;
+    padding: 0 10px 0 10px;
+    margin: 0 auto;
   }
 `
