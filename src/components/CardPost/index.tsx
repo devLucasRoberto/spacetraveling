@@ -15,21 +15,19 @@ interface Props {
 const CardPost: React.FC<Props> = ({ title, text, date, user }) => {
   return (
     <Container>
-      <Link to="/posts/post">
-        <Title>{title}</Title>
-        <P>{text}</P>
+      <Title>{title}</Title>
+      <P>{text}</P>
 
-        <Info>
-          <span>
-            <img src={dateImg} alt="" />
-            {date}
-          </span>
-          <span>
-            <img src={userImg} alt="" />
-            {user}
-          </span>
-        </Info>
-      </Link>
+      <Info>
+        <span>
+          <img src={dateImg} alt="" />
+          {date}
+        </span>
+        <span>
+          <img src={userImg} alt="" />
+          {user}
+        </span>
+      </Info>
     </Container>
   )
 }

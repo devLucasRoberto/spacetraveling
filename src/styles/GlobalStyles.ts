@@ -27,6 +27,10 @@ export default createGlobalStyle`
     font-family: 'Inter', sans-serif;
   }
 
+  a{
+    text-decoration: none;
+  }
+
   .container{
     max-width: 720px;
     padding: 0 10px 0 10px;

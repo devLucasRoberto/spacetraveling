@@ -1,10 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import bannerImg from '../../assets/banner.png'
 import InfoPost from '../../components/InfoPost'
+import { api } from '../../services/api'
 
 import { Container, Content } from './styles'
 
+interface Post {
+  id: number
+  title: string
+  text: string
+  createdAt: string
+  user: string
+  posts: []
+}
+
 const Post: React.FC = () => {
+  const [post, setPost] = useState<Post[]>([])
+
+  useEffect(() => {
+    api.get<Post>('post').then(response => response.data)
+  }, [])
+
   return (
     <Container>
       <img src={bannerImg} alt="" />
