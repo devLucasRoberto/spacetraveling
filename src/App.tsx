@@ -11,7 +11,7 @@ function App() {
 
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/posts/:post?" component={Post} />
+        <Route path="/posts/:postId" component={Post} />
       </Switch>
 
       <GlobalStyles />
